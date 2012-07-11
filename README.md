@@ -14,7 +14,7 @@ sudo cp -R ./node-v0.8.2/* /
 
 ### Building 
 
-Building is a bit tricker, follow along.
+Building is a bit trickier, follow along.
 
 First install some dependencies:
 
