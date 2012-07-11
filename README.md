@@ -5,8 +5,7 @@ If you're looking to run the latest Node.JS on the Raspberry Pi, you've come to 
 
 ### Installation
 
-
-Installation from the binaries available is easy:
+Download a binary available in the Downloads section, then:
 
 ```
 tar xzf node-v0.8.2.tar.gz
