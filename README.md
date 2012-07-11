@@ -54,12 +54,18 @@ Run configure and be sure to use the shared openssl lib that we downloaded earli
 ./configure --shared-openssl
 ```
 
-Now make and install:
+Now make and install, note the DESTDIR param. This is a work around for a bug whiches causes things to start re-compiling for some reason.
 
 
 ```
 make
-sudo make install
+make install DESTDIR=/tmp/node-v0.8.2
+```
+
+To install it global simply copy the contents resurisively to root:
+
+```
+sudo cp -vR /tmp/node-v0.8.2/* /
 ```
 
 
