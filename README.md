@@ -40,7 +40,7 @@ Now apply the patch appropriate for your version of Node.js:
 git apply --stat ../node_pi/v0.8.2-release-raspberrypi.patch
 ```
 
-Then set the follow exports for use during compilation:
+Then set the following exports for use during compilation:
 
 ```
 export GYP_DEFINES="armv7=0"
