@@ -9,7 +9,7 @@ Download a binary available in the Downloads section, then:
 
 ```
 tar xzf node-v0.8.2.tar.gz
-cp -R ./node-v0.8.2/* /
+sudo cp -R ./node-v0.8.2/* /
 ```
 
 ### Building 
