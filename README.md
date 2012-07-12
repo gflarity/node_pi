@@ -49,7 +49,7 @@ export CCFLAGS='-march=armv6'
 export CXXFLAGS='-march=armv6'`
 ```
 
-Run configure and be sure to use the shared openssl lib that we downloaded earlier:
+Run configure:
 
 ```
 ./configure 
