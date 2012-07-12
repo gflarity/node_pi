@@ -55,12 +55,12 @@ Run configure and be sure to use the shared openssl lib that we downloaded earli
 ./configure --shared-openssl
 ```
 
-Now make and install, note the DESTDIR param. This is a work around for a bug whiches causes things to start re-compiling for some reason.
+Now make and make install with the environment variables exported above. If you don't include these it'll try to re-compile everything. As if that weren't bad enough, it'll also probably not compile as there's a reason we included them in the first place!
 
 
 ```
 make
-make install DESTDIR=/tmp/node-v0.8.2
+sudo GYP_DEFINES="armv7=0" CCFLAGS='-march=armv6' CXXFLAGS='-march=armv6' make install
 ```
 
 To install it global simply copy the contents resurisively to root:
