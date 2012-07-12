@@ -52,7 +52,7 @@ export CXXFLAGS='-march=armv6'`
 Run configure and be sure to use the shared openssl lib that we downloaded earlier:
 
 ```
-./configure --shared-openssl
+./configure 
 ```
 
 Now make and make install with the environment variables exported above. If you don't include these it'll try to re-compile everything. As if that weren't bad enough, it'll also probably not compile as there's a reason we included them in the first place!
