@@ -2,6 +2,7 @@
 
 If you're looking to run the latest Node.JS on the Raspberry Pi, you've come to the right place.  
 
+More improvements to come, follow @gflarity for updates.
 
 ### Installation
 
