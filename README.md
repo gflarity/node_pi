@@ -63,13 +63,6 @@ make
 sudo GYP_DEFINES="armv7=0" CCFLAGS='-march=armv6' CXXFLAGS='-march=armv6' make install
 ```
 
-To install it global simply copy the contents resurisively to root:
-
-```
-sudo cp -vR /tmp/node-v0.8.2/* /
-```
-
-
 ### Credits
 
 http://www.raspberrypi.org/phpBB3//viewtopic.php?f=34&t=9929
