@@ -20,7 +20,7 @@ Building is a bit trickier, follow along.
 First install some dependencies:
 
 ```
-sudo apt-get install git-core build-essential libssl-dev
+sudo apt-get install git-core build-essential
 ```
 
 
