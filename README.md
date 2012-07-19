@@ -1,3 +1,8 @@
+### News
+
+So it looks like Node.js 0.6.19 can be installed using 'apt-get install nodejs' on the official image. This is great news, I'm looking into the status of v0.8.x. If they're going to stay up to date this page may just become a pointer to other instructions
+
+
 ### About
 
 If you're looking to run the latest Node.JS on the Raspberry Pi, you've come to the right place.  
