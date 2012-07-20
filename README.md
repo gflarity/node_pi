@@ -1,6 +1,8 @@
 ### News
 
-So it looks like Node.js 0.6.19 can be installed using 'apt-get install nodejs' on the official image. This is great news, I'm looking into the status of v0.8.x. If they're going to stay up to date this page may just become a pointer to other instructions
+* So it looks like Node.js 0.6.19 can be installed using 'apt-get install nodejs' on the official image. This is great news, I'm looking into the status of v0.8.x. If they're going to stay up to date this page may just become a pointer to other instructions
+
+* The current instructions are not tested on Raspbian (the new official distro). I believe there are issues, I'll try to update the instructions soon.
 
 
 ### About
