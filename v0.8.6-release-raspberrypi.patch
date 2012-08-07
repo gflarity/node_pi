@@ -1,14 +1,14 @@
-From 6a71e141d22e27d061a6698977c6fe4968a25b46 Mon Sep 17 00:00:00 2001
-From: Geoff Flarity <geoff.flarity@gmail.com>
-Date: Tue, 10 Jul 2012 23:48:18 +0000
-Subject: [PATCH] changes for Raspberry pi
+From 43f3678bd17ddade3d5f2046d816bef2a581fbb7 Mon Sep 17 00:00:00 2001
+From: Luis Abreu <lmjabreu@gmail.com>
+Date: Tue, 7 Aug 2012 23:37:11 +0100
+Subject: [PATCH] patched for raspberry_pi
 
 ---
- deps/v8/SConstruct |   30 +++++++++++++++---------------
- 1 file changed, 15 insertions(+), 15 deletions(-)
+ deps/v8/SConstruct |   28 ++++++++++++++--------------
+ 1 file changed, 14 insertions(+), 14 deletions(-)
 
 diff --git a/deps/v8/SConstruct b/deps/v8/SConstruct
-index ebce7ff..103e851 100644
+index ebce7ff..236bd64 100644
 --- a/deps/v8/SConstruct
 +++ b/deps/v8/SConstruct
 @@ -80,8 +80,8 @@ LIBRARY_FLAGS = {
@@ -18,11 +18,11 @@ index ebce7ff..103e851 100644
 -      'CCFLAGS':      ['$DIALECTFLAGS', '$WARNINGFLAGS'],
 -      'CXXFLAGS':     ['-fno-rtti', '-fno-exceptions'],
 +      'CCFLAGS':      ['$DIALECTFLAGS', '$WARNINGFLAGS', '-march=armv6'],
-+      'CXXFLAGS':     ['-fno-rtti', '-fno-exceptions', '-march=armv6'],
++      'CXXFLAGS':     ['-fno-rtti', '-fno-exceptions', '-march=armv6'],  
      },
      'visibility:hidden': {
        # Use visibility=default to disable this.
-@@ -159,22 +159,22 @@ LIBRARY_FLAGS = {
+@@ -159,21 +159,21 @@ LIBRARY_FLAGS = {
        },
        'armeabi:softfp' : {
          'CPPDEFINES' : ['USE_EABI_HARDFLOAT=0'],
@@ -47,17 +47,15 @@ index ebce7ff..103e851 100644
 -        'simulator:none': {
 -          'CCFLAGS':     ['-mfloat-abi=hard'],
 -        }
--      }
 +#        'vfp3:on': {
 +#          'CPPDEFINES' : ['CAN_USE_VFP_INSTRUCTIONS']
 +#        },
 +#        'simulator:none': {
 +#          'CCFLAGS':     ['-mfloat-abi=hard'],
 +#        }
-+#      }
+       }
      },
      'simulator:arm': {
-       'CCFLAGS':      ['-m32'],
 -- 
-1.7.10.4
+1.7.9.5
 
